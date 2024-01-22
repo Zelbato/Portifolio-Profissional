@@ -206,11 +206,11 @@
             <div class="interface">
                 <h2 class="titulo">Entre em <span>Contato</span></h2>
 
-                <form action="#">
-                    <input type="text" name="texto" id="" placeholder="Seu nome: " required>
-                    <input type="text" name="texto" id="" placeholder="Seu e-mail: " required>
-                    <input type="text" name="texto" id="" placeholder="Seu Telefone: ">
-                    <textarea name="texto" id="" placeholder="Sua mensagem: " required></textarea>
+                <form action="formulario/formulario.php" method="post">
+                    <input type="text" id="nome" placeholder="Seu nome: " name="nome" required>
+                    <input type="email" id="email" placeholder="Seu e-mail: " name="email" required>
+                    <input type="text" id="telefone" placeholder="Seu Telefone: " name="telefone">
+                    <textarea id="mensagem" placeholder="Sua mensagem: " name="mensagem" required></textarea>
                     <div class="btn-enviar">
                         <input type="submit" value="ENVIAR">
                     </div>
