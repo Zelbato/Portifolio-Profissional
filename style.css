@@ -31,6 +31,17 @@ body {
     cursor: pointer;
 }
 
+.btn-dowload button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(112, 15, 156);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
 button:hover {
     box-shadow: 0px 0px 18px rgb(112, 15, 200);
     transform: scale(1.05);
@@ -489,6 +500,7 @@ footer .line-footer p a {
     .btn-contato {
         display: none;
     }
+
 
     /*TOPO DO SITE*/
 
