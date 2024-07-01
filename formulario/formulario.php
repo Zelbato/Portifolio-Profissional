@@ -6,7 +6,6 @@ $telefone = nl_langinfo($_POST('telefone'));
 $mensagem = addcslashes($_POST('mensagem'));
 
 $destinatario = "heitorzelbato@gmail.com";
-$assunto = "Contato do Site - Portifólio Heitor":
 $assunto = "Contato do Site - Portifólio Heitor";
     $corpo = "Nome: ".$nome."\n".
     "E-mail: ".$email."\n".
