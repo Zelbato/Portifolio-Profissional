@@ -7,12 +7,12 @@
     <title>Portifolio Heitor</title>
     <link rel="stylesheet" href="style.css">
 
-    <link rel="shortcut icon" href="Imagens/Logo HZ.png" width: 35px height="35px">
+    <link rel="shortcut icon" href="Imagens/Logo HZ.png" width="100%" height="100%">
     <!--Boodstrap Icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!--Fim Boodstrap Icons-->
 
-    <script src="menu.js" defer></script>
+ 
 
 </head>
 
@@ -35,10 +35,19 @@
             </nav>
 
             <div class="btn-contato">
-                <a href="#meu-contato">
+                <a href="#contacts">
                     <button>Contato</button>
                 </a>
             </div><!--btn-contato-->
+
+            <div class="tema">
+                <input type="checkbox" class="checkbox" id="checkbox" >
+                <label class="label" for="checkbox">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="ball"></div>
+                </label>
+            </div>
 
             <div class="btn-abrir-menu" id="btn-menu">
                 <i class="bi bi-list"></i>
@@ -55,7 +64,7 @@
                         <li><a href="#sobre-mim">Sobre Mim</a></li>
                         <li><a href="#minhas-habilidades">Habilidades</a></li>
                         <li><a href="#meu-portifolio">Portifólio</a></li>
-                        <li><a href="#meu-contato">Contato</a></li>
+                        <li><a href="#contacts">Contato</a></li>
                     </ul>
                 </nav>
             </div><!--Menu-mobile-->
@@ -76,9 +85,9 @@
                         </h1>
                         <h2>Desenvolvedor Front-end</h2>
 
-                      <div class="curriculo">
-                        <a href="/Dowloads/currículoTrabalho.pdf">Download CV</a>
-                      </div>
+                        <div class="curriculo">
+                            <a href="/Dowloads/currículoTrabalho.pdf">Download CV</a>
+                        </div>
 
                     </div><!--txt-topo-site-->
 
@@ -150,7 +159,7 @@
                     <div class="habilidades-box">
                         <h3>JavaScript</h3>
                         <img src="Imagens/js.png" alt="icon">
-                       
+
                     </div><!--habilidades-box-->
 
                 </div><!--flex-->
@@ -162,19 +171,19 @@
                     <div class="habilidades-box">
                         <h3>GitHub</h3>
                         <img src="Imagens/github.png" alt="icon">
-                       
+
                     </div><!--habilidades-box-->
 
                     <div class="habilidades-box">
                         <h3>Bootstrap</h3>
                         <img src="Imagens/bootstrap.png" alt="icon">
-                       
+
                     </div><!--habilidades-box-->
 
                     <div class="habilidades-box">
                         <h3>Photoshop</h3>
                         <img src="Imagens/photoshop.png" alt="icon">
-                       
+
                     </div><!--habilidades-box-->
 
                 </div><!--flex-->
@@ -186,14 +195,62 @@
             <div class="interface">
                 <h2 class="titulo">Meu <span>Portifólio</span></h2>
                 <div class="flex">
+
+                    <div class="img-port" style="background-image: url(Imagens/repos-musica.png);">
+                
+                        <div class="overlay">
+                            <h3>Repositório de Música</h3>
+                            
+                            <button><a href="https://github.com/Zelbato/PlayList-Music">Acessar Repositório</a></button>
+                            <button><a href="https://repositoriomusica.netlify.app/">Acessar Projeto</a></button>
+                        </div><!--overlay-->
+
+                    </div><!--img-port-->
                     <div class="img-port" style="background-image: url(Imagens/repos-musica.png);">
                         <div class="overlay">
-                            <a href="https://repositoriomusica.netlify.app">Repositório de Musica</a>
+                            <h3>Repositório de Música</h3>
+                            
+                            <button><a href="https://github.com/Zelbato/PlayList-Music">Acessar Repositório</a></button>
+                            <button><a href="https://repositoriomusica.netlify.app/">Acessar Projeto</a></button>
                         </div><!--overlay-->
+
                     </div><!--img-port-->
                     <div class="img-port" style="background-image: url(Imagens/namorados.png);">
                         <div class="overlay">
-                            <a href="https://onvalentineday.netlify.app">Dia dos Namorados</a>
+                            <h3>Repositório de Música</h3>
+                            
+                            <button><a href="https://github.com/Zelbato/PlayList-Music">Acessar Repositório</a></button>
+                            <button><a href="https://repositoriomusica.netlify.app/">Acessar Projeto</a></button>
+                        </div><!--overlay-->
+                    </div><!--img-port-->
+
+                </div><!--Flex-->
+                <div class="flex">
+
+                    <div class="img-port" style="background-image: url(Imagens/repos-musica.png);">
+                        <div class="overlay">
+                            <h3>Repositório de Música</h3>
+                            
+                            <button><a href="https://github.com/Zelbato/PlayList-Music">Acessar Repositório</a></button>
+                            <button><a href="https://repositoriomusica.netlify.app/">Acessar Projeto</a></button>
+                        </div><!--overlay-->
+
+                    </div><!--img-port-->
+                    <div class="img-port" style="background-image: url(Imagens/repos-musica.png);">
+                        <div class="overlay">
+                            <h3>Repositório de Música</h3>
+                            
+                            <button><a href="https://github.com/Zelbato/PlayList-Music">Acessar Repositório</a></button>
+                            <button><a href="https://repositoriomusica.netlify.app/">Acessar Projeto</a></button>
+                        </div><!--overlay-->
+
+                    </div><!--img-port-->
+                    <div class="img-port" style="background-image: url(Imagens/namorados.png);">
+                        <div class="overlay">
+                            <h3>Repositório de Música</h3>
+                            
+                            <button><a href="https://github.com/Zelbato/PlayList-Music">Acessar Repositório</a></button>
+                            <button><a href="https://repositoriomusica.netlify.app/">Acessar Projeto</a></button>
                         </div><!--overlay-->
                     </div><!--img-port-->
 
@@ -204,48 +261,79 @@
 
         <br><br><br><br><br>
 
-        <section id="meu-contato" class="formulario">
-            <div class="interface">
-                <h2 class="titulo">Entre em <span>Contato</span></h2>
-
-                <form action="formulario/formulario.php" method="post">
-                    <input type="text" id="nome" placeholder="Seu nome: " name="nome" required>
-                    <input type="email" id="email" placeholder="Seu e-mail: " name="email" required>
-                    <input type="text" id="telefone" placeholder="Seu Telefone: " name="telefone">
-                    <textarea id="mensagem" placeholder="Sua mensagem: " name="mensagem" required></textarea>
-                    <div class="btn-enviar">
-                        <input type="submit" value="ENVIAR">
+        <section id="contacts" class="js-section">
+            <div class="contacts">
+                <div class="container">
+                    <h2>Conta<span >tos</span></h2>
+                    <div class="icons">
+                        <div class="icon">
+                            <a href="mailto:rheitorzelbato@gmail.com" target="_blank">
+                                <div class="box">
+                                    <img src="/Imagens/envelope.png" alt="e-mail">
+                                </div>
+                            </a>
+                            <a href="mailto:rheitorzelbato@gmail.com" target="_blank">
+                                <p>E-mail</p>
+                            </a>
+                            <a href="mailto:rheitorzelbato@gmail.com" target="_blank">
+                                <p>heitorzelbato@gmail.com</p>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://api.whatsapp.com/send?phone=5517988096975" target="_blank">
+                                <div class="box">
+                                    <img src="/Imagens/telefone.png" alt="telefone">
+                                </div>
+                            </a>
+                            <a href="https://api.whatsapp.com/send?phone=5517988096975" target="_blank">
+                                <p>Telefone</p>
+                            </a>
+                            <a href="https://api.whatsapp.com/send?phone=5517988096975" target="_blank">
+                                <p>(17) 98809-6975</p>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://www.linkedin.com/in/heitor-zelbato-9693a92a0/" target="_blank">
+                                <div class="box">
+                                    <img src="/Imagens/linkedin.png" alt="linkedin">
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/in/heitor-zelbato-9693a92a0/" target="_blank">
+                                <p>Linkedin</p>
+                            </a>
+                            <a href="https://www.linkedin.com/in/heitor-zelbato-9693a92a0/" target="_blank">
+                                <p>@Zelbato</p>
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="https://github.com/Zelbato" target="_blank">
+                                <div class="box">
+                                    <img src="/Imagens/contorno.png" alt="github">
+                                </div>
+                            </a>
+                            <a href="https://github.com/Zelbato" target="_blank">
+                                <p>Github</p>
+                            </a>
+                            <a href="https://github.com/Zelbato" target="_blank">
+                                <p>@Zelbato</p>
+                            </a>
+                        </div>
                     </div>
-                </form>
+                </div>
+            </div>
+        </section>
+
+               
             </div><!--Interface-->
         </section><!--Formulario-->
     </main>
 
     <br><br><br><br><br>
 
-    <footer>
-        <div class="interface">
-            <div class="line-footer">
-                <div class="flex">
-                    <div class="logo-footer">
-                        <img src="Imagens/Logo HZ.png" alt="logo">
-                    </div><!--Logo-Footer-->
-                    <div class="btn-social">
-                        <a
-                            href="https://www.linkedin.com/in/heitor-zelbato-9693a92a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><button><i
-                                    class="bi bi-linkedin"></i></button></a>
-                        <a href="https://github.com/Zelbato"><button><i class="bi bi-github"></i></button></a>
-                    </div><!--btn-social-->
-                </div><!--Flex-->
-            </div><!--Line-footer-->
-
-            <div class="line-footer">
-                <p><i class="bi bi-envelope"></i> <a href="mailto:heitorzelbato@gmail.com"> heitorzelbato@gmailcom</a>
-                </p>
-            </div><!--Line-footer-->
-        </div><!--Interface-->
-    </footer>
+    <script src="menu.js" defer></script>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
 
 </body>
 
 </html>
+

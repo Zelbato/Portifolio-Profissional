@@ -24,7 +24,9 @@ body {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: rgb(112, 15, 200);
+    background: linear-gradient(90deg, rgba(112, 15, 200,
+                1) 0%, rgb(78, 18, 139) 100%);
+    transition: all .5s;
     color: white;
     border: none;
     border-radius: 30px;
@@ -43,8 +45,9 @@ body {
 }
 
 button:hover {
-    box-shadow: 0px 0px 18px rgb(112, 15, 200);
-    transform: scale(1.05);
+    background: linear-gradient(90deg, rgb(81, 11, 147) 0%, rgb(45, 11, 79) 100%);
+    box-shadow: 0 0 10px rgba(106, 16, 190, 0.568);
+    transform: scale(0.9);
 }
 
 h2.titulo {
@@ -60,10 +63,15 @@ h2.titulo span {
     font-size: 20px;
 }
 
+body.white {
+    background: #f3f6f9;
+  }
+
 /*ESTILO DO CABEÇALHO*/
 
 header {
-    padding: 20px 2%;
+    padding: 20px 1%;
+    background: rgb(22, 22, 22);
 }
 
 header>.interface {
@@ -110,6 +118,59 @@ header nav.menu-desktop ul li {
 .btn-abrir-menu i {
     color: #ffffff00;
 }
+
+/*TEMA ESCURO E CLARO*/
+
+
+
+  
+  .checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+
+.label {
+    background: linear-gradient(90deg, rgba(112, 15, 200,
+                1) 0%, rgb(78, 18, 139) 100%);
+    border-radius: 50px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5px;
+    position: relative;
+    width: 80px;
+    height: 35px;
+
+  }
+  
+  .label .ball {
+    background-color:#343333;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 30px;
+    width: 30px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+  }
+
+  .checkbox:checked + .label .ball {
+    transform: translateX(45px);
+  }
+   
+
+  .fa-moon {
+    color: #f1c40f;
+  }
+  
+  .fa-sun {
+    color: #f39c12;
+}
+
 
 /*ESTILO MENU MOBILE*/
 
@@ -216,7 +277,13 @@ section .flex {
     height: 350px;
     border-radius: 50%;
     cursor: pointer;
+    transition: all .5s;
+    opacity: 0.7;
+}
 
+.topo-do-site .img-topo-site img:hover {
+    transform: scale(0.9);
+    opacity: 1;
 }
 
 .txt-topo-site .curriculo {
@@ -224,10 +291,9 @@ section .flex {
     justify-content: center;
     align-items: center;
 
- 
+
     background: linear-gradient(90deg, rgba(112, 15, 200,
-    1) 0%, rgb(78, 18, 139)
-    100%);
+                1) 0%, rgb(78, 18, 139) 100%);
     transition: all .5s;
 
     width: 150px;
@@ -238,14 +304,13 @@ section .flex {
 }
 
 .txt-topo-site .curriculo:hover {
-    background:linear-gradient(90deg, rgb(81, 11, 147) 0%, rgb(45, 11, 79)
-    100%);
+    background: linear-gradient(90deg, rgb(81, 11, 147) 0%, rgb(45, 11, 79) 100%);
     box-shadow: 0 0 10px rgba(106, 16, 190, 0.568);
     transform: scale(0.9);
 
 }
 
-.txt-topo-site .curriculo a{
+.txt-topo-site .curriculo a {
     color: #f3f6f9;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
@@ -283,7 +348,7 @@ section .habilidades .flex {
     flex-direction: column;
     align-items: center;
 
-    background:rgba(128, 128, 128, 0.147);
+    background: rgb(22, 22, 22);
     color: white;
 
     width: 120px;
@@ -352,7 +417,7 @@ section .sobre .flex {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
     text-align: justify;
@@ -380,7 +445,7 @@ section .sobre .flex {
 /*ESTILO DO PORTIFÓLIO*/
 
 section .portifolio {
-    padding: 20px 6%;
+    padding: 20px 2%;
 }
 
 .portifolio .flex {
@@ -392,26 +457,59 @@ section .portifolio {
 
 
 .img-port {
-    width: 360px;
-    height: 460px;
-    background-color: rgb(112, 15, 200);
+    width: 380px;
+    height: 220px;
     margin: 10px 0%;
-    transition: 1.5s;
-    border-radius: 40px;
+    border-bottom: 3px solid rgb(112, 15, 200);
+    border-top: 3px solid #242424;
+    border-left: 3px solid #242424;
+    border-right: 3px solid #242424;
+    border-radius: 15px 0px 15px 0px;
+
+    transition: .5s;
     cursor: pointer;
     position: relative;
     background-size: cover;
+    background-position: center;
 }
 
 .img-port:hover {
-    background-position: 100% 100%;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgba(57, 57, 57, 0.53);
 }
 
-.img-port .overlay a {
-    cursor: pointer;
-    transition: .2s;
-    color: white;
+.img-port .overlay h3 {
+    position: absolute;
+    color: #f3f6f9bd;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.img-port .overlay button {
+    position: relative;
+    width: auto;
+    padding: 8px;
+    background: linear-gradient(90deg, rgb(81, 11, 147) 0%, rgb(75, 28, 121) 100%);
+    border: none;
+    border-radius: 6px;
+    margin: 10px;
+
+    top: 25%;
+
+}
+
+.img-port .overlay button a {
+    color: #f3f6f9;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
     text-decoration: none;
+}
+
+.img-port .overlay button:hover {
+    background: linear-gradient(90deg, rgb(81, 11, 147) 0%, rgb(75, 28, 121) 100%);
+    transition: 0.5s;
 }
 
 .overlay {
@@ -420,23 +518,23 @@ section .portifolio {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.733);
-    border-radius: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 24px;
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #000000aa;
+    border-radius: 10px 0px 10px 0px;
     color: white;
-    opacity: 0;
     transition: .5s;
-    box-shadow: 0 0 40px 10px #ffffff1d;
+    opacity: 0;
 }
 
 .overlay:hover {
     opacity: 1;
 }
+
 
 /*ESTILO FORMULARIO*/
 
@@ -555,10 +653,26 @@ footer .line-footer p a {
         padding: 20px 4%;
     }
 
+    .topo-do-site .img-topo-site img {
+        width: 100%;
+    }
+
     /*HABILIDADES*/
 
     .habilidades {
-        padding: 40px 8%;
+        padding: 40px 4%;
+    }
+
+    .habilidades .habilidades-box {
+        width: 250px;
+        height: 180px;
+        margin-top: 5px;
+    }
+
+    .habilidades .habilidades-box img {
+        width: 75px;
+        height: auto;
+        margin: 0 auto;
     }
 
     /*SOBRE*/
@@ -598,7 +712,15 @@ footer .line-footer p a {
         gap: 60px;
     }
 
+    /* FORMULARIO*/
+
+    form {
+        width: 95%;
+    }
+
     /*RODAPÉ*/
+
+
 
     footer .flex {
         flex-direction: column;
@@ -608,7 +730,99 @@ footer .line-footer p a {
         text-align: center;
     }
 
+}
 
+.js-section {
+    height: 70vh;
+    padding: 40px 4%;
+   
+}
 
+.js-section .contacts {
+    flex-direction: column;
+    align-items: center;
+}
 
+.contacts .container {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.contacts .container h2 {
+    font-size: 34px;
+    font-weight: 700;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;   
+    color: #f3f6f9;
+}
+
+.contacts .container span {
+    font-size: 34px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: rgb(112, 15, 200);
+}
+
+.contacts .container .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.container .icons .icon {
+    margin:10px  30px;
+    font-size: 12px;
+    transition: all .3s;
+}
+
+.container .icons .icon:hover {
+    background: transparent;
+    transform: scale(1.3);
+
+}
+
+.container .icons .icon .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(45, 45, 45);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin: 20px 50px;
+
+}
+
+.container .icons .icon .box  img {
+    width: 35px;
+    height: 35px;
+}
+
+.container .icons .icon a {
+    color: #f3f6f9;
+    font-size: 13px;
+    text-decoration: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.container .icons .icon p {
+    color: #f3f6f9;
+    font-size: 13px;
+    text-decoration: none;
+    text-align: center;
+    margin: 5px;
+}
+
+::-webkit-scrollbar {
+    background: rgb(22, 22, 22);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(112, 15, 200);
 }
