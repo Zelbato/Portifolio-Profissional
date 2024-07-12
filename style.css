@@ -281,8 +281,10 @@ section .flex {
 }
 
 
-.topo-do-site .txt-topo-site h1 span {
+.topo-do-site .txt-topo-site span {
     color: rgb(112, 15, 200);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
     font-size: 40px;
 }
 
@@ -613,16 +615,30 @@ form .btn-enviar input[type=submit]:hover {
 
 /*CONTATOS*/
 
-.js-section {
+#contacts {
     height: 70vh;
     padding: 40px 4%;
-   
+  
 }
 
-.js-section .contacts {
+.js-global {
+    opacity: 0;
+    transition: .5s;
+    transform: translateX(-10rem);
+}
+
+.js-global.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+.contacts {
     flex-direction: column;
     align-items: center;
 }
+
+
 
 .contacts .container {
 display: flex;
