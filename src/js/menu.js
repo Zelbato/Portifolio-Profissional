@@ -84,16 +84,16 @@ document.querySelector(".form-card form").addEventListener("submit", function (e
     const texto = encodeURIComponent(
         `[Formulário de Contato - Nova Solicitação]
 
-        ID da Solicitação: ${id}
-        Data/Hora: ${dataHora}
+ID: ${id}
+Data/Hora: ${dataHora}
 
-        Nome do Solicitante: ${nome}
+Nome do Solicitante: ${nome}
 
-        Mensagem:
-        ${mensagem}
+Mensagem:
+${mensagem}
 
---------------------------------------------
-        Notificação automática gerada pelo sistema.`
+
+Notificação automática gerada pelo sistema.`
     );
 
     window.open(`https://wa.me/${numero}?text=${texto}`, "_blank");
