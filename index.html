@@ -4,323 +4,413 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio Heitor</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Portfólio Heitor Zelbato </title>
 
-    <link rel="shortcut icon" href="Imagens/Logo HZ.png" width="100%" height="100%">
-    <!--Boodstrap Icons-->
+    <link rel="icon" type="image/png" href="src/img/Eu.jpeg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!--Fim Boodstrap Icons-->
+    <!-- Font Awesome Free CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 
 <body>
 
-    <header>
-        <div class="interface">
-            <div class="logo">
-                <a href="index.html">
-                    <!--<img src="Imagens/Logo HZ.png" alt="Image"> -->
-                    <span class="title-logo">Heitor <span class="span-logo"> Zelbato</span></span>
-                </a>
-            </div><!--Logo-->
-            <nav class="menu-desktop">
-                <ul>
-                    <!-- <li><a href="index.html">Inicio</a></li> -->
-                    <li><a href="#sobre-mim">Sobre </a></li>
-                    <li><a href="#minhas-habilidades">Skills</a></li>
-                    <li><a href="#meu-portifolio">Projetos</a></li>
-                </ul>
-            </nav>
+    <header class="header-mobile">
+        <div class="mobile-container">
+            <h1 class="logo-mobile">Heitor.dev</h1>
 
-            <div class="btn-contato">
-                <a href="#contacts">
-                    <button>Contato</button>
-                </a>
-            </div><!--btn-contato-->
-
-            <div class="tema">
-                <input type="checkbox" class="checkbox" id="checkbox">
-                <label class="label" for="checkbox">
-                    <i class="fas fa-moon"></i>
-                    <i class="fas fa-sun"></i>
-                    <div class="ball"></div>
-                </label>
-            </div>
-
-            <div class="btn-abrir-menu" id="btn-menu">
+            <div class="menu-icon" id="menu-toggle">
                 <i class="bi bi-list"></i>
             </div>
+        </div>
 
-            <div class="menu-mobile" id="menu-mobile">
-                <div class="btn-fechar">
-                    <i class="bi bi-x-lg"></i>
-                </div><!--btn-fechar-->
-
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="#sobre-mim">Sobre Mim</a></li>
-                        <li><a href="#minhas-habilidades">Habilidades</a></li>
-                        <li><a href="#meu-portifolio">Portifólio</a></li>
-                        <li><a href="#contacts">Contato</a></li>
-                    </ul>
-                </nav>
-            </div><!--Menu-mobile-->
-            <div class="overlay-menu" id="overlay-menu"></div>
-        </div><!--Interface-->
+        <nav class="mobile-nav" id="mobile-nav">
+            <a href="#inicio">Início</a>
+            <a href="#sobre-mim">Sobre</a>
+            <a href="#skills">Habilidades</a>
+            <a href="#projects">Projetos</a>
+            <a href="#contact">Contato</a>
+        </nav>
     </header>
 
-    <br><br><br><br><br>
 
-    <main>
-        <section id="topo-site" class="topo-do-site">
-            <div class="interface">
-                <div class="flex">
-                    <div class="txt-topo-site">
+    <nav class="sidebar" id="sidebar">
+        <header class="header">
+            <div class="img-text">
+                <span class="img">
+                    <img src="src/img/Eu.jpeg" alt="Img-Logo">
+                </span>
 
-                        <h1></h1>
-                        <span> </span>
-                        <h2></h2>
+                <div class="text header-text">
+                    <span class="name">Heitor Araujo</span>
+                    <span class="profision">Web Developer</span>
+                </div>
+            </div>
+        </header>
 
-                        <div class="curriculo">
-                            <a href="/Dowloads/Curriculo - Heitor-Araujo.pdf">Download CV</a>
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-link">
+                    <li class="nav-link"><a href="#inicio">
+                            <i class="bi bi-house icon"></i>
+                            <span class="text nav-text">Inicio</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link"><a href="#sobre-mim">
+                            <i class="bi bi-person-check icon"></i>
+                            <span class="text nav-text">Sobre Mim</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link"><a href="#skills">
+                            <i class="bi bi-tools icon"></i>
+                            <span class="text nav-text">Habilidades</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link"><a href="#projects">
+                            <i class="bi bi-folder2 icon"></i>
+                            <span class="text nav-text">Projetos</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link"><a href="#contact">
+                            <i class="bi bi-envelope icon"></i>
+                            <span class="text nav-text">Contato</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bootom-content">
+                <li class="nav-link"><a href="https://api.whatsapp.com/send?phone=5517988096975">
+                        <i class="bi bi-whatsapp icon-btn"></i>
+                        <span class="text-btn nav-text">WhatsApp</span>
+                    </a>
+                </li>
+            </div>
+
+            <div class="liks-content">
+                <div class="link">
+                    <a href="https://www.facebook.com/share/1ARCpDp3rV/">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+                <div class="link">
+                    <a
+                        href="https://www.linkedin.com/in/heitor-zelbato-9693a92a0?utm_source=share_via&utm_content=profile&utm_medium=member_android">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <div class="link">
+                    <a href="https://github.com/Zelbato">
+                        <i class="bi bi-github"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="local-card">
+                <div class="local-icon">
+                    <i class="bi bi-geo-alt-fill"></i>
+                </div>
+
+                <div class="local-info">
+                    <h3>Localização</h3>
+                    <p>Santa Fé do Sul, SP, Brasil</p>
+                </div>
+            </div>
+
+
+        </div>
+    </nav>
+
+    <div class="menu-toggle">
+        <i class="bi bi-list"></i>
+    </div>
+
+
+    <!-- <div class="img-fundo"></div> -->
+
+    <main class="main">
+
+        <section id="inicio" class="inicio">
+            <div class="inicio-content">
+                <div class="title">
+                    <h2>Bem Vindo!</h2>
+                </div>
+                <div class="subtitle">
+                    <h1 id="typing"></h1>
+                </div>
+
+                <div class="intro-text">
+                    <p>Desenvolvedor Front-End focado em criar interfaces intuitivas, funcionais e responsivas, com
+                        atenção a design clean e performance.</p>
+                </div>
+
+                <div class="botoes">
+                    <!-- <div class="btn btn-download">
+                        <a href="src/uploads/Curriculo - Heitor-Araujo.pdf">Curriculo</a>
+                    </div> -->
+                    <div class="btn btn-fale-comigo">
+                        <a href="https://api.whatsapp.com/send?phone=5517988096975">Fale Comigo</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-down">
+                <a href="#sobre-mim">
+                    <span>Conheça mais sobre mim</span>
+                    <i class="bi bi-arrow-down-short"></i>
+                </a>
+            </div>
+        </section>
+
+        <section class="sobre-mim" id="sobre-mim">
+            <div class="sobre-content">
+                <div class="s-title">
+                    <h2>Sobre <span class="gradint">Mim</span>. </h2>
+                </div>
+
+                <div class="paragrafo">
+                    <p>
+                        Sou Heitor Araujo, desenvolvedor web e designer
+                        Criei projetos como um site de teste vocacional e um
+                        sistema de compra e venda para sorveteria, aplicando
+                        HTML, CSS, JavaScript e PHP.
+                    </p>
+                    <p>
+                        Meu objetivo é transformar ideias em soluções digitais simples,
+                        intuitivas e funcionais,
+                        sempre aprendendo e evoluindo para entregar experiências de
+                        qualidade.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <div class="skill-title">
+                <h2>Habilidades</h2>
+            </div>
+            <div class="skill-sub-title">
+                <p>Tecnologias e ferramentas que utilizo para criar soluções incríveis</p>
+            </div>
+            <div class="skills-content">
+                <div class="skills-list">
+                    <div class="skill">
+                        <span>HTML</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 100%;"></div>
                         </div>
-
-                    </div><!--txt-topo-site-->
-
-                    <div class="img-topo-site">
-                        <a href="https://github.com/Zelbato"> <img src="Imagens/Eu.jpg" alt="#"> </a>
-                    </div><!--img-topo-site-->
-                </div><!--flex-->
-            </div><!--Interface-->
-        </section><!--Topo do site-->
-
-        <br><br><br><br><br>
-        <br><br><br><br><br>
-
-        <section id="sobre-mim" class="sobre js-global">
-            <div class="interface">
-                <h2 class="titulo">Sobre<span> mim</span></h2>
-                <br><br><br>
-                <div class="flex">
-
-                    <div class="img-sobre">
-                        <img src="Imagens/desenho-hacker (1).png" alt="#">
-                    </div><!--img-sobre-->
-
-
-
-                    <div class="txt-sobre">
-                        <h2>Muito prazer,
-                            <span>Sou Heitor Zelbato</span>
-                        </h2>
-                        <p>
-                            Me chamo Heitor, tenho 19 anos e estou cursando Análise e Desenvolvimento de Sistemas. Estou
-                            me preparando para atuar como desenvolvedor web, com foco em front-end, e busco uma
-                            oportunidade de estágio ou vaga na área.
-                        </p>
-
-                        <p>
-                            Iniciei meus estudos em programação em 2022 e, desde então, venho desenvolvendo projetos
-                            práticos que fortaleceram meus conhecimentos. Atualmente, sigo evoluindo constantemente,
-                            aprendendo novas tecnologias e aprimorando minhas habilidades técnicas e criativas.
-                        </p>
-
-
-                    </div><!--txt-sobre-->
-
-                </div><!--Flex-->
-
-            </div><!--Interface-->
-        </section><!--Sobre-->
-
-        <br><br><br><br><br>
-        <br><br><br><br><br>
-
-        <section id="minhas-habilidades" class="habilidades">
-            <div class="interface">
-                <h2 class="titulo js-global">Minhas <span>Habilidades</span></h2>
-
-                <div class="grid-habilidades js-global">
-                    <div class="habilidades-box">
-                        <img src="Imagens/html-5.png" alt="HTML5 Icon">
-                        <h3>HTML5</h3>
+                        <span class="percent">100%</span>
                     </div>
-                    <div class="habilidades-box">
-                        <img src="Imagens/css-3.png" alt="CSS3 Icon">
-                        <h3>CSS3</h3>
+                    <div class="skill">
+                        <span>CSS</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 100%;"></div>
+                        </div>
+                        <span class="percent">100%</span>
                     </div>
-                    <div class="habilidades-box">
-                        <img src="Imagens/js.png" alt="JavaScript Icon">
-                        <h3>JavaScript</h3>
+                    <div class="skill">
+                        <span>Sass</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 100%;"></div>
+                        </div>
+                        <span class="percent">100%</span>
                     </div>
-                    <div class="habilidades-box">
-                        <img src="Imagens/Sass.png" alt="Sass Icon">
-                        <h3>Sass</h3>
+                    <div class="skill">
+                        <span>GitHub</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 100%;"></div>
+                        </div>
+                        <span class="percent">100%</span>
                     </div>
-                    <div class="habilidades-box">
-                        <img src="Imagens/github.png" alt="GitHub Icon">
-                        <h3>GitHub</h3>
+                    <div class="skill">
+                        <span>Git</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 100%;"></div>
+                        </div>
+                        <span class="percent">100%</span>
                     </div>
-                    <div class="habilidades-box">
-                        <img src="Imagens/bootstrap.png" alt="Bootstrap Icon">
-                        <h3>Bootstrap</h3>
+                    <div class="skill">
+                        <span>Bootstrap</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 80%;"></div>
+                        </div>
+                        <span class="percent">80%</span>
                     </div>
-                    <div class="habilidades-box">
-                        <img src="Imagens/php.png" alt="PHP Icon">
-                        <h3>PHP 8</h3>
+                    <div class="skill">
+                        <span>Tailwindcss</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 70%;"></div>
+                        </div>
+                        <span class="percent">70%</span>
                     </div>
-                    <div class="habilidades-box">
-                        <img src="Imagens/photoshop.png" alt="Photoshop Icon">
-                        <h3>Photoshop</h3>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 70%;"></div>
+                        </div>
+                        <span class="percent">70%</span>
                     </div>
-                    <div class="habilidades-box">
-                        <img src="Imagens/tailwindcss-removebg-preview.png" alt="Tailwind Icon">
-                        <h3>Tailwind</h3>
+                    <div class="skill">
+                        <span>PHP</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 50%;"></div>
+                        </div>
+                        <span class="percent">50%</span>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 40%;"></div>
+                        </div>
+                        <span class="percent">40%</span>
                     </div>
                 </div>
             </div>
         </section>
 
+        <section class="projects" id="projects">
+            <h2 class="projects-title">Meus <span class="gradint">Projetos</span></h2>
+            <div class="projects-wrapper">
 
-        <br><br><br><br><br>
+                <div class="project">
+                    <div class="project-img">
+                        <img src="src/img/Tela-Inicial.png" alt="Projeto Sorveteria">
+                    </div>
 
-        <section id="meu-portifolio" class="portifolio">
-            <div class="interface">
-                <h2 class="titulo js-global">Meu <span>Portifólio</span></h2>
-                <div class="flex js-global">
+                    <div class="project-content">
+                        <h3>Sistema de Teste vocacional</h3>
+                        <p>Sistema completo de gestão com controle de estoque, vendas e dashboard visual.</p>
 
-                    <div class="img-port" style="background-image: url(Imagens/quiz-programacao.png);">
+                        <div class="techs">
+                            <span>Html</span>
+                            <span>Css</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                        </div>
 
-                        <div class="overlay">
-                            <h3>Quiz de Programação</h3>
-
-                            <button><a href="https://github.com/Zelbato/Quiz-Programacao">Acessar
-                                    Repositório</a></button>
-                            <button><a href="https://quizdeprogramacao.netlify.app/">Acessar Projeto</a></button>
-                        </div><!--overlay-->
-
-                    </div><!--img-port-->
-
-                    <div class="img-port" style="background-image: url(Imagens/repos-musica.png);">
-                        <div class="overlay">
-                            <h3>Repositório de Música</h3>
-
-                            <button><a href="https://github.com/Zelbato/PlayList-Music">Acessar Repositório</a></button>
-                            <button><a href="https://repositoriomusica.netlify.app/">Acessar Projeto</a></button>
-                        </div><!--overlay-->
-
-                    </div><!--img-port-->
-
-                    <!-- <div class="img-port" style="background-image: url(Imagens/duna.png);">
-                        <div class="overlay">
-                            <h3>Catalogo de Filmes</h3>
-
-                            <button><a href="https://github.com/Zelbato/Catalogo-Filmes">Acessar
-                                    Repositório</a></button>
-                            <button><a href="https://dunafilmes.netlify.app/">Acessar Projeto</a></button>
-                        </div>!--overlay--
-                    </div>img-port -->
-                    <!-- </div>Flex -->
-
-                    <!-- <div class="flex js-global"> -->
-
-                    <div class="img-port" style="background-image: url(Imagens/calculadora.png);">
-                        <div class="overlay">
-                            <h3>Calculadora JS</h3>
-
-                            <button><a href="https://github.com/Zelbato/Calculadora">Acessar Repositório</a></button>
-                            <button><a href="https://calculando-js.netlify.app/">Acessar Projeto</a></button>
-                        </div><!--overlay-->
-                    </div><!--img-port-->
-
-                    <div class="img-port" style="background-image: url(Imagens/facebook-clone.png);">
-                        <div class="overlay">
-                            <h3>Clone Facebook</h3>
-
-                            <button><a href="https://github.com/Zelbato/Clone-Facebook-Tailwindcss">Acessar
-                                    Repositório</a></button>
-                            <button><a href="https://face-tailwindcss.netlify.app/">Acessar Projeto</a></button>
-                        </div><!--overlay-->
-                    </div><!--img-port-->
-
+                        <div class="project-btns">
+                            <a href="https://github.com/Zelbato/Teste-Vocacional" target="_blank" class="btn github"><i
+                                    class="bi bi-github"></i> GitHub</a>
+                            <button href="#" target="_blank" class="btn live">Indisponivel</button>
+                        </div>
+                    </div>
                 </div>
-            </div><!--Interface-->
-        </section><!--Portifolio-->
+                <div class="project">
+                    <div class="project-img">
+                        <img src="src/img/Tela-Inicial-2.png" alt="Projeto Sorveteria">
+                    </div>
 
-        <br><br><br><br><br>
+                    <div class="project-content">
+                        <h3>Sistema de Sorveteria</h3>
+                        <p>Sistema completo de gestão com controle de estoque, vendas e dashboard visual.</p>
 
-        <section id="contacts" class="js-global">
-            <div class="contacts">
-                <div class="container">
-                    <h2>Meus <span>Contatos</span></h2>
-                    <div class="icons">
-                        <div class="icon">
-                            <a href="mailto:heitorzelbato@gmail.com" target="_blank">
-                                <div class="box">
-                                    <img src="/Imagens/envelope.png" alt="e-mail">
-                                </div>
-                            </a>
-                            <a href="mailto:heitorzelbato@gmail.com" target="_blank">
-                                <p>E-mail</p>
-                            </a>
-                            <a href="mailto:heitorzelbato@gmail.com" target="_blank">
-                                <p>heitorzelbato@gmail.com</p>
-                            </a>
+                        <div class="techs">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>JavaScript</span>
+                            <span>Css</span>
                         </div>
-                        <div class="icon">
-                            <a href="https://api.whatsapp.com/send?phone=5517988096975" target="_blank">
-                                <div class="box">
-                                    <img src="/Imagens/telefone.png" alt="telefone">
-                                </div>
-                            </a>
-                            <a href="https://api.whatsapp.com/send?phone=5517988096975" target="_blank">
-                                <p>Telefone</p>
-                            </a>
-                            <a href="https://api.whatsapp.com/send?phone=5517988096975" target="_blank">
-                                <p>(17) 98809-6975</p>
-                            </a>
+
+                        <div class="project-btns">
+                            <a href="https://github.com/Zelbato/PagePedy" target="_blank" class="btn github"><i
+                                    class="bi bi-github"></i> GitHub</a>
+                            <button href="#" target="_blank" class="btn live">Indisponivel</button>
                         </div>
-                        <div class="icon">
-                            <a href="https://www.linkedin.com/in/heitor-zelbato-9693a92a0/" target="_blank">
-                                <div class="box">
-                                    <img src="/Imagens/linkedin.png" alt="linkedin">
-                                </div>
-                            </a>
-                            <a href="https://www.linkedin.com/in/heitor-zelbato-9693a92a0/" target="_blank">
-                                <p>Linkedin</p>
-                            </a>
-                            <a href="https://www.linkedin.com/in/heitor-zelbato-9693a92a0/" target="_blank">
-                                <p>@Zelbato</p>
-                            </a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="project-img">
+                        <img src="src/img/calculadora.png" alt="Projeto Sorveteria">
+                    </div>
+
+                    <div class="project-content">
+                        <h3>Calculadora Virtual</h3>
+                        <p>Uma calculadora online prática e funcional, capaz de realizar operações matemáticas básicas
+                            de forma rápida e precisa.</p>
+
+
+                        <div class="techs">
+                            <span>Html</span>
+                            <span>Css</span>
+                            <span>JavaScript</span>
                         </div>
-                        <div class="icon">
-                            <a href="https://github.com/Zelbato" target="_blank">
-                                <div class="box">
-                                    <img src="/Imagens/contorno.png" alt="github">
-                                </div>
-                            </a>
-                            <a href="https://github.com/Zelbato" target="_blank">
-                                <p>Github</p>
-                            </a>
-                            <a href="https://github.com/Zelbato" target="_blank">
-                                <p>@Zelbato</p>
-                            </a>
+
+                        <div class="project-btns">
+                            <a href="https://github.com/Zelbato/Calculadora" target="_blank" class="btn github"><i
+                                    class="bi bi-github"></i> GitHub</a>
+                            <a href="https://calculando-js.netlify.app/" target="_blank" class="btn live">Ver Online</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <section id="contact" class="contact-section">
+            <h2 class="contact-title">Entre em <span class="gradint">Contato</span></h2>
+            <div class="contact-wrapper">
 
-        </div><!--Interface-->
-        </section><!--Formulario-->
+                <!-- CARD INFORMAÇÕES -->
+                <div class="contact-card info-card">
+                    <h3>Informações de Contato</h3>
+                    <div class="contact-items">
+                        <a href="tel:+5517988096975" class="contact-item">
+                            <div class="icon"><i class="bi bi-telephone-fill"></i></div>
+                            <div class="text">
+                                <p class="label">Telefone</p>
+                                <p class="value">+55 (17) 98809-6975</p>
+                            </div>
+                        </a>
+                        <a href="mailto:heitorzelbato@email.com" class="contact-item">
+                            <div class="icon"><i class="bi bi-envelope-fill"></i></div>
+                            <div class="text">
+                                <p class="label">Email</p>
+                                <p class="value">heitorzelbato@email.com</p>
+                            </div>
+                        </a>
+                        <a href="#" class="contact-item">
+                            <div class="icon"><i class="bi bi-geo-alt-fill"></i></div>
+                            <div class="text">
+                                <p class="label">Localização</p>
+                                <p class="value">Santa Fé do Sul, SP, Brasil</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD FORMULÁRIO -->
+                <div class="contact-card form-card">
+                    <h3>Envie uma mensagem</h3>
+                    <form action="#" method="POST">
+                        <input type="text" name="name" placeholder="Seu nome" required>
+                        <textarea name="message" rows="5" placeholder="Sua mensagem..." required></textarea>
+                        <button type="submit" class="btn-submit">Enviar via WhatsApp</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <a href="#" class="scroll-top" title="Voltar ao topo">
+            <i class="bi bi-arrow-up-short"></i>
+        </a>
+
     </main>
 
-    <br><br><br><br><br>
+    <footer class="footer">
+        <p class="copy">© 2025 Heitor Araujo — Todos os direitos reservados.</p>
+        <!-- <p class="by">Desenvolvido por <span>Heitor Araujo</span></p> -->
+    </footer>
 
-    <script src="menu.js" defer></script>
-    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+
+
+
+    <script src="src/js/menu.js"></script>
 
 </body>
 

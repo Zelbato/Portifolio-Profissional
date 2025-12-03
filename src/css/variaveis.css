@@ -1,0 +1,24 @@
+:root {
+    --primary: #2C3E50;
+    --second: #E67E22;
+    --hover: #1b26313f;
+    --hover-2: #b9651b;
+    --fundo: #1B2631;
+    --fundo-2: #34495E;
+
+    --title: 2.5rem;
+    --subtitle: 1.8rem;
+    --paragrafo: 1.2rem;
+
+    --text-color-1: #ECF0F1;
+    --text-color-2: #BDC3C7;
+    --text-color-3: rgb(25, 25, 25);
+
+    --white: #fff;
+    --black: rgb(25, 25, 25);
+
+    --trans-02: all .2s ease;
+    --trans-03: all .4s ease;
+    --trans-04: all .4s ease;
+    --trans-05: all .5s ease;
+}
