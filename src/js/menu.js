@@ -69,12 +69,33 @@ document.querySelector(".form-card form").addEventListener("submit", function (e
     const nome = this.querySelector("input[name='name']").value;
     const mensagem = this.querySelector("textarea[name='message']").value;
 
-    const numero = "5517988096975"; 
+    // Função para gerar ID padrão corporativo
+    function gerarID() {
+        const t = Date.now().toString(36).toUpperCase();
+        const r = Math.random().toString(36).substring(2, 8).toUpperCase();
+        return `MSG-${t}-${r}`;
+    }
+
+    const id = gerarID();
+    const dataHora = new Date().toLocaleString("pt-BR");
+
+    const numero = "5517988096975";
+
     const texto = encodeURIComponent(
-        `Nova solicitação pelo sistema:\n` +
-        `Identificação: ${nome}\n` +
-        `Mensagem: ${mensagem}`
+        `[Formulário de Contato - Nova Solicitação]
+
+        ID da Solicitação: ${id}
+        Data/Hora: ${dataHora}
+
+        Nome do Solicitante: ${nome}
+
+        Mensagem:
+        ${mensagem}
+
+--------------------------------------------
+        Notificação automática gerada pelo sistema.`
     );
 
     window.open(`https://wa.me/${numero}?text=${texto}`, "_blank");
 });
+
