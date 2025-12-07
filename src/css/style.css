@@ -992,7 +992,6 @@ html {
         background: var(--fundo);
         color: var(--text-color-1);
 
-        max-width: 1200px;
         width: 100%;
         margin: auto;
     }
